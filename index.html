@@ -574,6 +574,27 @@ img { max-width: 100%; display: block; }
 .offer-list li { display: flex; gap: 7px; margin: 7px 0; color: #354353; font-size: 13px; line-height: 1.35; }
 .offer-list li:before { content: '✓'; color: var(--green); font-weight: 800; }
 
+.offer-compact-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 16px;
+}
+.offer-compact-list li {
+  font-size: 13px;
+  color: #354353;
+  margin: 6px 0;
+  line-height: 1.35;
+  text-align: left;
+}
+.offer-btn-cta {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 15px 20px;
+  font-size: 13.5px;
+  box-sizing: border-box;
+}
+
 .offer-box .cta { display: flex; margin: auto; max-width: 430px; text-align: center; white-space: normal; }
 
 .offer-box .leave {
@@ -718,12 +739,53 @@ img { max-width: 100%; display: block; }
   .comparison { padding: 24px 15px; margin-top: 28px; }
   .compare > div { padding: 18px; }
   
-  .offer-box { padding: 24px 16px; border-radius: 18px; max-height: 88vh; }
-  .offer-box h2 { font-size: 1.45rem; }
-  .offer-intro { font-size: 0.92rem; }
-  .offer-content { grid-template-columns: 1fr; gap: 12px; }
-  .offer-list li { font-size: 12.5px; margin: 5px 0; }
-  .offer-price strong { font-size: 2.6rem; }
+  .offer-box {
+    padding: 20px 15px 16px !important;
+    border-radius: 18px !important;
+    max-height: 94vh !important;
+    width: 95% !important;
+    margin: auto !important;
+  }
+  .offer-box h2 {
+    font-size: 1.28rem !important;
+    margin: 10px 0 6px !important;
+    line-height: 1.15 !important;
+  }
+  .offer-intro {
+    font-size: 0.85rem !important;
+    margin: 0 auto 10px !important;
+    line-height: 1.35 !important;
+  }
+  .offer-price {
+    padding: 8px 12px !important;
+    margin: 8px auto 12px !important;
+    gap: 1px !important;
+  }
+  .offer-price span {
+    font-size: 11px !important;
+  }
+  .offer-price s {
+    font-size: 14px !important;
+  }
+  .offer-price strong {
+    font-size: 2.35rem !important;
+  }
+  .offer-price small {
+    font-size: 11px !important;
+  }
+  .offer-compact-list {
+    margin: 10px 0 14px !important;
+  }
+  .offer-compact-list li {
+    font-size: 11.5px !important;
+    margin: 5px 0 !important;
+  }
+  .offer-box .leave {
+    margin: 10px auto 0 !important;
+    font-size: 12px !important;
+    min-height: auto !important;
+    padding: 4px 0 !important;
+  }
 }
 
 @media(min-width: 801px) {
@@ -927,7 +989,7 @@ img { max-width: 100%; display: block; }
           </ul>
         </div>
         <div>
-          <a class="plan-cta-featured" href="https://pay.cakto.com.br/axbqqqy" target="_blank" rel="noopener">🟢 Quero a Biblioteca Completa</a>
+          <a class="plan-cta-featured" href="https://pay.wiapy.com/wGHgqhFJsOZ" target="_blank" rel="noopener">🟢 Quero a Biblioteca Completa</a>
           <div class="plan-badge-footer">Seguro • 7 dias • Imediato</div>
         </div>
       </article>
@@ -979,53 +1041,30 @@ img { max-width: 100%; display: block; }
   </div>
 </section>
 
-<!-- Offer Modal (Plano Básico -> Desconto Especial) -->
+<!-- Offer Modal Otimizado para Mobile -->
 <div id="offer-modal" class="offer-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
   <div class="offer-box">
     <button class="offer-close" type="button" aria-label="Fechar oferta" onclick="closeModal()">×</button>
     <span class="eyebrow">⚠️ ESPERA! ÚLTIMA CHANCE</span>
-    <h2 id="modal-title">Antes de sair, leve com desconto especial!</h2>
-    <p class="offer-intro">Liberamos uma condição única para você levar a Biblioteca Completa por apenas <b>R$ 14,90</b>. Todos os recursos e bônus inclusos.</p>
+    <h2 id="modal-title">Leve a Biblioteca Completa com Desconto!</h2>
+    <p class="offer-intro">Condição exclusiva de saída: acervo completo + todos os 6 bônus inclusos por preço único.</p>
     
     <div class="offer-price">
       <span>Biblioteca Completa</span>
       <s>R$ 22,90</s>
       <strong>R$ 14,90</strong>
-      <small>Pagamento único</small>
+      <small>Pagamento único • Acesso vitalício</small>
     </div>
     
-    <div class="offer-content">
-      <div>
-        <h3>Biblioteca Completa</h3>
-        <ul class="offer-list">
-          <li>+1.500 recursos para Educação Especial e AEE</li>
-          <li>Atividades pedagógicas adaptadas</li>
-          <li>Alfabetização inclusiva</li>
-          <li>Matemática adaptada</li>
-          <li>Atenção e raciocínio</li>
-          <li>Comunicação e apoio visual</li>
-          <li>Autonomia e vida diária</li>
-          <li>Coordenação motora</li>
-          <li>Jogos pedagógicos</li>
-          <li>Rotinas e recursos visuais</li>
-          <li>Acesso vitalício</li>
-        </ul>
-      </div>
-      <div>
-        <h3>🎁 + 6 Bônus exclusivos</h3>
-        <ul class="offer-list">
-          <li>🎁 Kit de Alfabetização Inclusiva</li>
-          <li>🎁 Kit Matemática Adaptada</li>
-          <li>🎁 Mega Kit de Jogos para o AEE</li>
-          <li>🎁 Kit Autonomia e Vida Diária</li>
-          <li>🎁 Kit Comunicação e Apoio Visual</li>
-          <li>🎁 Guia Prático de Adaptação de Atividades</li>
-        </ul>
-      </div>
-    </div>
+    <ul class="offer-compact-list">
+      <li>✓ <strong>+1.500 Recursos Prontos</strong> (Alfabetização, Matemática, Cognição e Autonomia)</li>
+      <li>✓ <strong>Materiais Adaptados e em PDF</strong> para imprimir e usar imediatamente</li>
+      <li>✓ <strong>🎁 + 6 Bônus Exclusivos inclusos</strong> (Jogos, Rotinas e Guias Práticos)</li>
+      <li>✓ <strong>Acesso Vitalício</strong> sem mensalidades ou taxas extras</li>
+    </ul>
     
-    <a class="cta" href="https://pay.cakto.com.br/qkdggk8" target="_blank" rel="noopener" onclick="closeModal()">🟢 Sim! Quero garantir por R$ 14,90</a>
-    <a class="leave" href="https://pay.cakto.com.br/7pqyh56_1071738" target="_blank" rel="noopener" onclick="closeModal()">Não, prefiro levar apenas o Kit Básico por R$ 10,00</a>
+    <a class="cta offer-btn-cta" href="https://pay.wiapy.com/K4tsQ31hdHK" target="_blank" rel="noopener" onclick="closeModal()">🟢 SIM! QUERO GARANTIR POR R$ 14,90</a>
+    <a class="leave" href="https://pay.wiapy.com/6aa84a44a3b8e74fff3bc898" target="_blank" rel="noopener" onclick="closeModal()">Não, prefiro levar apenas o Kit Básico por R$ 10,00</a>
   </div>
 </div>
 
